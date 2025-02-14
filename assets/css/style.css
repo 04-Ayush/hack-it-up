@@ -564,12 +564,12 @@ section {
   transition: all 0.4s ease-in-out;
   display: inline-block;
   padding: 15px 0;
-  /* filter: grayscale(100); */
+  filter: grayscale(100);
 }
 
 .cliens img:hover {
   filter: none;
-  /* transform: scale(1.1); */
+  transform: scale(1.1);
 }
 
 @media (max-width: 768px) {
@@ -1623,7 +1623,7 @@ section {
 --------------------------------------------------------------*/
 #footer {
   font-size: 14px;
-  background: #37517e;
+  background:#4CAF50;
 }
 
 #footer .footer-newsletter {
@@ -1769,7 +1769,7 @@ section {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #209dd8;
+  background: #2fd820;
   color: #fff;
   text-decoration: none;
 }

@@ -1,33 +1,36 @@
-/* styles.css */
+/* Updated CSS for an attractive login & signup form */
 body {
     font-family: Arial, sans-serif;
+    background: linear-gradient(120deg, #2980b9, #6dd5fa);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f4f4f4;
     margin: 0;
 }
 
 .container {
-    width: 300px;
-    padding: 20px;
     background: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
     text-align: center;
 }
 
-.form-box {
-    display: none;
+h2 {
+    margin-bottom: 20px;
+    color: #333;
 }
 
-.form-box h2 {
-    margin-bottom: 20px;
+.form-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 input {
-    width: 100%;
+    width: 90%;
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ccc;
@@ -37,21 +40,36 @@ input {
 button {
     width: 100%;
     padding: 10px;
-    background: #28a745;
     border: none;
+    background: #2980b9;
     color: white;
+    font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 button:hover {
-    background: #218838;
+    background: #1b5c8a;
 }
 
 p {
-    margin-top: 10px;
+    margin-top: 15px;
+    font-size: 14px;
 }
 
-#login-box {
+a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+/* Home Page Shortcut */
+.home-link {
     display: block;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
 }
