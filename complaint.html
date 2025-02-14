@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complaint Page</title>
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- cdn for awesome fonts icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   <!-- Google Fonts -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" crossorigin="anonymous" />
+
+<style>
+    #navbar {
+        background-color: #4CAF50 !important;
+    }
+</style>
+</head>
+<body>
+    <h1 class="logo me-auto"><a href="index.html">Waste Management System</a></h1>
+    <!-- Uncomment below if you prefer to use an image logo -->
+    <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
+
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a class="nav-link scrollto " href="index.html"><span class="fa fa-home"> Home </span></a></li>
+        <li><a class="nav-link scrollto" href="#about"><span class="fa fa-info-circle" aria-hidden="true"> About us</span></a></li>
+        <li><a class="nav-link scrollto active " href="complaint.html"><span class="fa fa-trash"> Complain</span></a></li>
+        <li><a class="nav-link scrollto"  href="#home"><span class="fa fa-edit"> Preview Complain </span></a></li>
+        <!-- <li><a class="nav-link scrollto" href="#contact">Contact</a></li> -->
+        <li><a class="nav-link scrollto" href="#faq"><span class="fa fa-question-circle"> FAQ</span></a></li>
+        <li><a class="nav-link scrollto" href="login.html"><span class="fas fa-sign-out-alt">Login</span></a></li>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav><!-- .navbar -->
+    
+    <main class="container mt-5">
+        <h2 class="text-center">Submit a Complaint</h2>
+        <form action="submit_complaint.php" method="POST" class="mt-4" id="complaint-form">
+            <div class="mb-3">
+                <label for="authority" class="form-label">Select Authority</label>
+                <select id="authority" name="authority" class="form-select" required>
+                    <option value="">Choose...</option>
+                    <option value="municipality">Municipality</option>
+                    <option value="health_department">Health Department</option>
+                    <option value="environmental_board">Environmental Board</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="complaintType" class="form-label">Complaint Type</label>
+                <select id="complaintType" name="complaintType" class="form-select" required>
+                    <option value="">Choose...</option>
+                    <option value="garbage_not_collected">Garbage Not Collected</option>
+                    <option value="illegal_dumping">Illegal Dumping</option>
+                    <option value="sewage_leak">Sewage Leak</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="description" class="form-label">Complaint Description</label>
+                <textarea id="description" name="description" class="form-control" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit Complaint</button>
+        </form>
+        
+        <script>
+            document.getElementById("complaint-form").addEventListener("submit", function(event) {
+                event.preventDefault(); // Prevents default form submission behavior
+        
+                // Simulate form submission process (AJAX can be added here)
+                setTimeout(() => {
+                    alert("Complaint submitted successfully!");
+                    window.location.href = "index.html"; // Redirect to index.html
+                }, 1000);
+            });
+        </script>
+                </main>
+        
+        <!-- Footer -->
+        <footer id="footer" class="mt-5 p-3 bg-dark text-white text-center">
+            <p>&copy; 2025 Waste Management System. All Rights Reserved.</p>
+        </footer>
+    </body>
+    </html>
