@@ -50,7 +50,7 @@
     cursor: pointer;
     transition: 0.3s;
 }
-
+/* responsive  */
 @media (max-width: 991px) {
     .bi-list.mobile-nav-toggle {
         display: block;
